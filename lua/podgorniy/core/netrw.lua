@@ -51,4 +51,3 @@ augroup auto_commands
     autocmd filetype netrw call Netrw_mappings()
 augroup END
 ]])
-
