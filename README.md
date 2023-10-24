@@ -5,6 +5,9 @@
 3. [Options Notes](#options-notes)
 4. [Lua Notes](#lua-notes)
 
+[Learn Vim the Smart Way](https://learnvim.irian.to/)
+[Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
+
 #### Plugins :books:
 
 **Plugin Manager**  
