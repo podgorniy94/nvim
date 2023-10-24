@@ -1,7 +1,7 @@
 #### Neovim Setup :computer:
 
 1. [Genetal Notes](#General-Notes)
-2. [Options Notes](#Options-Notes)
+2. [Options Notes](#Options-Notes-:mag_right:)
 3. [Lua](#Lua)
 
 #### Plugins :books:
@@ -74,8 +74,7 @@ Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
 
 ---
 
-#### Options Notes :mag_right: {#section2}
-
+#### Options Notes :mag_right:
 **Performance**
 
 ```vim
