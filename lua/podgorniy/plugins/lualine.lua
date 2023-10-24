@@ -19,6 +19,7 @@ return {
                 replace = "#e46876",
                 command = "#e6c384",
             }
+
             return {
                 inactive = {
                     a = { fg = colors.gray, bg = colors.outerbg, gui = "bold" },
@@ -53,7 +54,7 @@ return {
             }
         end
 
-        -- configure lualine with modified theme
+        -- Configure lualine with modified theme
         lualine.setup({
             options = {
                 theme = trans.theme(),

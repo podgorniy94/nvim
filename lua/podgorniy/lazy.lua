@@ -14,28 +14,10 @@ vim.g.mapleader = ","
 
 require("lazy").setup('podgorniy.plugins')
 
+--  Displaying the indention levels
+--    use "lukas-reineke/indent-blankline.nvim"
 
---[[
-    -- Interface
-
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-
-    -- A markdown preview
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = "cd app && npm install",
-        setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
-        ft = { "markdown" },
-    })
-
-    --  Displaying the indention levels
-    use "lukas-reineke/indent-blankline.nvim"
---]]
-
-----------------------------------------------------------
+-----------------------------------
 
 --[[
 -- Treesitter
@@ -50,16 +32,6 @@ end
 " LSP (Language Server Protocol)
 Plug 'neovim/nvim-lspconfig'
 Plug 'jose-elias-alvarez/null-ls.nvim'
-
-" Telescope (fuzzy finder) 
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-
-" Interface
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'mhartington/oceanic-next'
-Plug 'ryanoasis/vim-devicons'
 
 " Git
 " Plug 'airblade/vim-gitgutter'
