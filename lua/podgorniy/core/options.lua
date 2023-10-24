@@ -51,7 +51,3 @@ o.spellsuggest = 'best, 6'
 o.swapfile = false
 o.virtualedit = 'block'         -- Перемещение столбцов (rect) с использ. режима виз. блока
 o.wildignore = '*.docx,*.jpg,*.png,*..df,*.pyc,*.exe,*.flv,*.img,*.xlsx'
-
-
--- Глобальная переменная 'vim' служит точкой входа для взаимодействия с Neovim API из Lua кода
--- Мета-аксессоры обертывают функции API: vim.api.nvim_set_option() = vim.opt.{option}

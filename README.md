@@ -1,10 +1,10 @@
 #### Neovim Setup :computer:
 
-[Setup Guides](#setup-guides)  
-[Plugins](#plugins)  
-[Genetal Notes](#general-notes)  
-[Options Notes](#options-notes)  
-[Lua Notes](#lua-notes)
+1. [Setup Guides](#setup-guides)
+2. [Plugins](#plugins)
+3. [Genetal Notes](#general-notes)
+4. [Options Notes](#options-notes)
+5. [Lua Notes](#lua-notes)
 
 #### Plugins :books:
 
@@ -169,6 +169,9 @@ set nomodelines
 
 **Defaults**
 
+Глобальная переменная 'vim' служит точкой входа для взаимодействия с Neovim API из Lua кода.
+Мета-аксессоры обертывают функции API: `vim.api.nvim_set_option() = vim.opt.{option}`.
+
 ```Lua
 -- :h nvim-defaults
 
@@ -193,6 +196,20 @@ o.wildmenu = true                   -- Показывать меню автод�
 ---
 
 #### Lua Notes :bulb:
+
+**Conventions of lua plugins**
+
+Mostly plugins written in lua follow a certain pattern. They use a function called `.setup`, and that function expects a lua table with some options.
+
+```Lua
+require('lualine').setup({
+  options = {
+    icons_enabled = false,
+    section_separators = '',
+    component_separators = ''
+  }
+})
+```
 
 **Boolean toggle**
 
