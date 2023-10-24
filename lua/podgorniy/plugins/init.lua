@@ -15,5 +15,5 @@ return {
 -- Navigating Between Neovim Windows and Tmux
 -- 'christoomey/vim-tmux-navigator'
 
--- 'szw/vim-maximizer'   -- maximizes and restore current window
-
+-- Maximizes and restore current window
+-- 'szw/vim-maximizer'
