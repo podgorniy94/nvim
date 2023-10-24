@@ -1,10 +1,8 @@
 return {
-    -- Interface
     'mhartington/oceanic-next',
     priority = 1000,    -- load before all other plugins
     config = function()
-        --- COLORSHEME
-
+        -- COLORSHEME
         local g = vim.g
         local cmd = vim.cmd
 
@@ -15,17 +13,13 @@ return {
         -- g.oceanic_next_terminal_bold = 1
         -- g.oceanic_next_terminal_italic = 1
 
-        -- Set colorscheme with protected call
-        local status, _ = pcall(vim.cmd, "colorscheme OceanicNext")
-        if not status then
-          print("Colorscheme not found!")
-          return
-        end
+        -- Set colorscheme 
+        vim.cmd([[colorscheme OceanicNext]])
 
         -- Transparency
         cmd('hi Normal guibg = NONE ctermbg = NONE')
         cmd('hi LineNr guibg = NONE ctermbg = NONE')
         cmd('hi SignColumn guibg = NONE ctermbg = NONE')
-        cmd('hi  EndOfBuffer guibg = NONE ctermbg = NONE')        vim.cmd([[]])
-        end,
+        cmd('hi  EndOfBuffer guibg = NONE ctermbg = NONE')
+    end,
 }

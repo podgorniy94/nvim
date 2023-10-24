@@ -37,7 +37,10 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
--- Insert --
+-- Delete a single character without copy
+keymap("n", "x", '"_x', opts)
+
+-- Insert
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
 

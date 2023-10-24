@@ -35,6 +35,7 @@ require("lazy").setup('podgorniy.plugins')
     use "lukas-reineke/indent-blankline.nvim"
 --]]
 
+----------------------------------------------------------
 
 --[[
 -- Treesitter
