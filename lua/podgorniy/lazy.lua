@@ -14,9 +14,6 @@ vim.g.mapleader = ","
 
 require("lazy").setup('podgorniy.plugins')
 
---  Displaying the indention levels
---    use "lukas-reineke/indent-blankline.nvim"
-
 -----------------------------------
 
 --[[
