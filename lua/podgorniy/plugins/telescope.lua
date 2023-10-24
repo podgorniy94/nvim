@@ -1,5 +1,4 @@
--- Telescope (fuzzy finder)
-return {
+return {    -- Telescope (fuzzy finder)
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x",
   dependencies =  {

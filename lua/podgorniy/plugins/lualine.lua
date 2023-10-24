@@ -1,10 +1,9 @@
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },   -- VS Code Like Icons
-
     config = function()
         local lualine = require("lualine")
-        -- local lazy_status = require("lazy.status") -- to configure lazy pending updates count
+        local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
         local trans = {}
         trans.theme = function()
@@ -59,6 +58,18 @@ return {
             options = {
                 theme = trans.theme(),
             },
+      sections = {
+        lualine_x = {
+          { -- Showing pending updates
+            lazy_status.updates,
+            cond = lazy_status.has_updates,
+            color = { fg = "#ff9e64" },
+          },
+          { "encoding" },
+          { "fileformat" },
+          { "filetype" },
+        },
+      },
         })
     end,
 }

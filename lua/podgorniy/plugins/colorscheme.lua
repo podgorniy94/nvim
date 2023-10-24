@@ -2,8 +2,7 @@ return {
     'mhartington/oceanic-next',
     priority = 1000,    -- load before all other plugins
     config = function()
-        -- COLORSHEME
-        local g = vim.g
+        -- local g = vim.g
         local cmd = vim.cmd
 
         if vim.fn.has('termguicolors') then
@@ -13,7 +12,7 @@ return {
         -- g.oceanic_next_terminal_bold = 1
         -- g.oceanic_next_terminal_italic = 1
 
-        -- Set colorscheme 
+        -- Set colorscheme
         vim.cmd([[colorscheme OceanicNext]])
 
         -- Transparency

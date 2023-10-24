@@ -1,12 +1,10 @@
 #### Neovim Setup :computer:
 
-1. [Plugins](#plugins)
-2. [Genetal Notes](#general-notes)
-3. [Options Notes](#options-notes)
-4. [Lua Notes](#lua-notes)
-
-[Learn Vim the Smart Way](https://learnvim.irian.to/)
-[Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
+[Setup Guides](#setup-guides)  
+[Plugins](#plugins)  
+[Genetal Notes](#general-notes)  
+[Options Notes](#options-notes)  
+[Lua Notes](#lua-notes)
 
 #### Plugins :books:
 
@@ -16,8 +14,9 @@
 **Dependency For Other Plugins**  
 [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Useful lua functions other plugins use
 
-<!-- **Navigating Between Neovim Windows and Tmux** -->
+**Navigating Between Neovim Windows and Tmux**
 <!-- [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) -->
+[vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window
 
 **Essentials**  
 [tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
@@ -27,6 +26,7 @@
 [mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - colorscheme  
 [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - Status Line  
 [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - VS Code Like Icons
+<!-- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line -->
 
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  
@@ -48,12 +48,30 @@
 [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"  
 <!-- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter -->
 
-**Markdown preview**  
+**Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
 ---
 
+#### Managing & Installing Language Servers, Linters & Formatters
+[williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
+
+**LSP Configuration**  
+[williamboman/mason-lspconfig.nvim](williamboman/mason-lspconfig.nvim) - Bridges gap b/w mason & lspconfig  
+[neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Easy way to configure lsp servers  
+[hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Smart code autocompletion with lsp
+
+**Formatting & Linting**
+<!-- stevearc/conform.nvim - Easy way to configure formatters -->
+<!-- mfussenegger/nvim-lint - Easy way to configure linters -->
+[WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto install linters & formatters on startup
+
+---
+
 #### General Notes :information_desk_person: 
+
+[Learn Vim the Smart Way](https://learnvim.irian.to/)  
+[Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
 
 **Commands**
 
@@ -214,3 +232,15 @@ vim.opt.wildignore:prepend { "new_first_value" }
 -- set {option}-={flags}
 vim.opt.wildignore = vim.opt.wildignore - { "node_modules" }
 vim.opt.wildignore:remove { "node_modules" }
+```
+
+---
+
+#### Setup Guides :grey_question:
+
+- [Complete Guide](https://youtu.be/vdn_pKJUda8?si=A6tykSv-ll-bYXAs)
+- [How To Use lazy.nvim](https://youtu.be/6mxWayq-s9I?si=iaHEX00Wv0OG4_M8)
+- [Setup LSP](https://youtu.be/NL8D8EkphUw?si=bVEiu1z7_y0A3Flf)
+- [Setup Linting And Formating](https://youtu.be/ybUE4D80XSk?si=o02_8eVKBTav9-an)
+- [Setup Treesitter](https://youtu.be/CEMPq_r8UYQ?si=LgcXAz6xV9KsmvdT)
+
