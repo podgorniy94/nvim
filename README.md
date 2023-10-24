@@ -1,8 +1,9 @@
 #### Neovim Setup :computer:
 
-1. [Genetal Notes](#General-Notes)
-2. [Options Notes](#Options-Notes-:mag_right:)
-3. [Lua](#Lua)
+1. [Plugins](#plugins)
+2. [Genetal Notes](#general-notes)
+3. [Options Notes](#options-notes)
+4. [Lua Notes](#lua-notes)
 
 #### Plugins :books:
 
@@ -170,7 +171,7 @@ o.wildmenu = true                   -- Показывать меню автод�
 
 ---
 
-#### Lua
+#### Lua Notes :bulb:
 
 **Boolean toggle**
 
