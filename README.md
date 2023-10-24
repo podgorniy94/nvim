@@ -94,6 +94,11 @@ Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
 **Font**  
 [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
+**How to set transparent background for iTerm2 in full screen mode on a Mac**  
+1. Open your iTerm2-> Choose Full screen window style in Open profiles -> Edit profiles ->  Window -> Stylesettings.
+2. Now un-check the Native full screen windows in General settings of iTerm2 (not the profile).
+3. Now you can choose the level transparency in Open profiles -> Edit profiles -> Window settings.
+
 ---
 
 #### Options Notes :mag_right:
