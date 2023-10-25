@@ -2,6 +2,7 @@ return {    -- Telescope (fuzzy finder)
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x", -- option to specify a branch
   dependencies =  {
+      "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-fzf-native.nvim", build = "make" -- option to build fzf-native
   },
   config = function()
