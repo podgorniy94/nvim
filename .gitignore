@@ -1,5 +1,6 @@
 spell/
 lua/podgorniy/transfer
+unplugged.md
 
 # Compiled Lua sources
 luac.out

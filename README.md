@@ -14,24 +14,29 @@
 **Dependency For Other Plugins**  
 [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Useful lua functions other plugins use
 
-**Navigating Between Neovim Windows and Tmux**
-<!-- [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) -->
-[vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window
-
 **Essentials**  
 [tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
-[vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"
+[vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"  
+[vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window
 
 **Interface**  
-[mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - colorscheme  
+[mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - Colorscheme  
 [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - Status Line  
-[kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - VS Code Like Icons
-<!-- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line -->
+[kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - VS Code Like Icons  
+[akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line  
+[goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Neovim Greeter
+
 
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  
 [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder  
 [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) - select/input ui improvement
+
+**Keymap Suggestions**  
+[folke/which-key.nvim](https://github.com/folke/which-key.nvim)
+
+<!-- **Marking Files With Prime's Harpoon**   -->
+<!-- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) -->
 
 **Autocompletion**  
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
@@ -47,6 +52,12 @@
 **Comments**  
 [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"  
 <!-- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter -->
+
+<!-- **Treesitter Syntax Highlighting, Autoclosing & Text Objects**   -->
+<!-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configuration   -->
+<!-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Treesitter configuration   -->
+<!-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autoclose brackets, parens, quotes, etc...   -->
+<!-- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose tags -->
 
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
@@ -271,4 +282,3 @@ vim.opt.wildignore:remove { "node_modules" }
 - [Setup LSP](https://youtu.be/NL8D8EkphUw?si=bVEiu1z7_y0A3Flf)
 - [Setup Linting And Formating](https://youtu.be/ybUE4D80XSk?si=o02_8eVKBTav9-an)
 - [Setup Treesitter](https://youtu.be/CEMPq_r8UYQ?si=LgcXAz6xV9KsmvdT)
-
