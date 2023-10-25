@@ -92,7 +92,13 @@ Neovim has built-in LSP (Language Server Protocol) client.
 Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
 
 **Font**  
-[ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+```bash
+# ryanoasis/nerd-fonts
+brew tap homebrew/cask-fonts
+brew search font- | grep jetbrains
+brew install --cask font-jetbrains-mono-nerd-font
+```
 
 **How to set transparent background for iTerm2 in full screen mode on a Mac**  
 1. Open your iTerm2-> Choose Full screen window style in Open profiles -> Edit profiles ->  Window -> Stylesettings.
