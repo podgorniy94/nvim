@@ -2,7 +2,6 @@
 -- Autocommands
 -- -------------------------------------------------------------------------------
 
-
 local autocmd = vim.api.nvim_create_autocmd
 
 -- Enable Spell Checker on certain files
