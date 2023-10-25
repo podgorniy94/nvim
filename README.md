@@ -31,7 +31,7 @@
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  
 [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder  
-<!-- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) - select/input ui improvement -->
+[stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) - select/input ui improvement
 
 **Autocompletion**  
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
