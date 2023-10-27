@@ -76,14 +76,14 @@ keymap("n", "<leader>da", ":Lexplore<CR>", { noremap = true })
 -- Window navigation on Netrw buffers
 vim.api.nvim_create_augroup("netrw_mappings", { clear = true })
 autocmd("filetype", {
-	group = "netrw_mappings",
-	pattern = "netrw",
-	callback = function()
-		buf_set_keymap(0, "n", "<C-h>", ":wincmd h<cr>", opts)
-		buf_set_keymap(0, "n", "<C-j>", ":wincmd j<cr>", opts)
-		buf_set_keymap(0, "n", "<C-k>", ":wincmd k<cr>", opts)
-		buf_set_keymap(0, "n", "<C-l>", ":wincmd l<cr>", opts)
-	end,
+  group = "netrw_mappings",
+  pattern = "netrw",
+  callback = function()
+    buf_set_keymap(0, "n", "<C-h>", ":wincmd h<cr>", opts)
+    buf_set_keymap(0, "n", "<C-j>", ":wincmd j<cr>", opts)
+    buf_set_keymap(0, "n", "<C-k>", ":wincmd k<cr>", opts)
+    buf_set_keymap(0, "n", "<C-l>", ":wincmd l<cr>", opts)
+  end,
 })
 
 -- Create file without opening buffer

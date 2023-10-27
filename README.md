@@ -6,7 +6,7 @@
 4. [Options Notes](#options-notes)
 5. [Lua Notes](#lua-notes)
 
-#### Plugins :books:
+### Plugins :books:
 
 **Plugin Manager**  
 [folke/lazy.nvim](https://github.com/folke/lazy.nvim) - Amazing plugin manager
@@ -62,7 +62,7 @@
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
-#### Managing & Installing Language Servers, Linters & Formatters
+### Managing & Installing Language Servers, Linters & Formatters
 
 [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 
@@ -71,16 +71,14 @@
 [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Easy way to configure lsp servers  
 [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Smart code autocompletion with lsp
 
-**Formatting & Linting**
-
-<!-- stevearc/conform.nvim - Easy way to configure formatters -->
-<!-- mfussenegger/nvim-lint - Easy way to configure linters -->
-
+**Formatting & Linting**  
+[stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - Easy way to configure formatters  
+[mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint) - Easy way to configure linters  
 [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto install linters & formatters on startup
 
 ---
 
-#### General Notes :information_desk_person:
+### General Notes :information_desk_person:
 
 [Learn Vim the Smart Way](https://learnvim.irian.to/)  
 [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
@@ -120,7 +118,7 @@ brew install --cask font-jetbrains-mono-nerd-font
 
 ---
 
-#### Options Notes :mag_right:
+### Options Notes :mag_right:
 
 **Performance**
 
@@ -220,7 +218,7 @@ o.wildmenu = true                   -- Показывать меню автод�
 
 ---
 
-#### Lua Notes :bulb:
+### Lua Notes :bulb:
 
 **Conventions of lua plugins**
 
@@ -278,7 +276,7 @@ vim.opt.wildignore:remove { "node_modules" }
 
 ---
 
-#### Setup Guides :grey_question:
+### Setup Guides :grey_question:
 
 - [Complete Guide](https://youtu.be/vdn_pKJUda8?si=A6tykSv-ll-bYXAs)
 - [How To Use lazy.nvim](https://youtu.be/6mxWayq-s9I?si=iaHEX00Wv0OG4_M8)
