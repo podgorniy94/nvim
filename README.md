@@ -1,4 +1,4 @@
-#### Neovim Setup :computer:
+#### Neovim Setup / Tables of Contents :computer:
 
 1. [Setup Guides](#setup-guides)
 2. [Plugins](#plugins)
