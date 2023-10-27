@@ -1,4 +1,4 @@
-return {
+return { -- +
   "mhartington/oceanic-next",
   priority = 1000, -- load before all other plugins
   config = function()
