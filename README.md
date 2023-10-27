@@ -1,4 +1,4 @@
-#### Neovim Setup / Tables of Contents :computer:
+### Neovim Setup / Tables of Contents :computer:
 
 1. [Setup Guides](#setup-guides)
 2. [Plugins](#plugins)
@@ -17,7 +17,8 @@
 **Essentials**  
 [tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
 [vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"  
-[vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window
+[vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window  
+[lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git
 
 **Interface**  
 [mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - Colorscheme  
@@ -290,5 +291,4 @@ vim.opt.wildignore:remove { "node_modules" }
 [rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
 [colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
 [https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
-[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
