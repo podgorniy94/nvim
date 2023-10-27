@@ -1,8 +1,9 @@
-return {
+return { -- +
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
-    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-nvim-lsp", -- completion source
+    -- rename files to update any affected import statements
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
@@ -15,6 +16,8 @@ return {
     local keymap = vim.keymap -- for conciseness
 
     local opts = { noremap = true, silent = true }
+
+    -- Only apply to the language server attached to the buffer
     local on_attach = function(client, bufnr)
       opts.buffer = bufnr
 
@@ -72,15 +75,15 @@ return {
 
     -- configure html server
     lspconfig["html"].setup({
-      capabilities = capabilities,
+      capabilities = capabilities, -- proper autocompletion functionality
       on_attach = on_attach,
     })
 
-    -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    -- -- configure typescript server with plugin
+    -- lspconfig["tsserver"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
 
     -- configure css server
     lspconfig["cssls"].setup({
@@ -92,36 +95,6 @@ return {
     lspconfig["tailwindcss"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-    })
-
-    -- configure svelte server
-    lspconfig["svelte"].setup({
-      capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-
-        vim.api.nvim_create_autocmd("BufWritePost", {
-          pattern = { "*.js", "*.ts" },
-          callback = function(ctx)
-            if client.name == "svelte" then
-              client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
-            end
-          end,
-        })
-      end,
-    })
-
-    -- configure prisma orm server
-    lspconfig["prismals"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure graphql language server
-    lspconfig["graphql"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
     })
 
     -- configure emmet language server
@@ -157,5 +130,34 @@ return {
         },
       },
     })
+    -- -- configure svelte server
+    -- lspconfig["svelte"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = function(client, bufnr)
+    --     on_attach(client, bufnr)
+    --
+    --     vim.api.nvim_create_autocmd("BufWritePost", {
+    --       pattern = { "*.js", "*.ts" },
+    --       callback = function(ctx)
+    --         if client.name == "svelte" then
+    --           client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
+    --         end
+    --       end,
+    --     })
+    --   end,
+    -- })
+
+    -- -- configure prisma orm server
+    -- lspconfig["prismals"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
+
+    -- -- configure graphql language server
+    -- lspconfig["graphql"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    --   filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    -- })
   end,
 }

@@ -1,8 +1,8 @@
-return {
+return { -- +
   "williamboman/mason.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "williamboman/mason-lspconfig.nvim", -- bridges mason.nvim with the lspconfig plugin
+    "WhoIsSethDaniel/mason-tool-installer.nvim", -- keep automatically up-to-date with tools
   },
   config = function()
     -- import mason
@@ -27,15 +27,15 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
+        -- "tsserver",
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
+        -- "svelte",
         "lua_ls",
-        "graphql",
+        -- "graphql",
         "emmet_ls",
-        "prismals",
+        -- "prismals",
         "pyright",
       },
       -- auto-install configured servers (with lspconfig)
@@ -49,7 +49,7 @@ return {
         "isort", -- python formatter
         "black", -- python formatter
         "pylint", -- python linter
-        "eslint_d", -- js linter
+        -- "eslint_d", -- js linter
       },
     })
   end,

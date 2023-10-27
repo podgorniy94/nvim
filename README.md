@@ -26,7 +26,6 @@
 [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line  
 [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Neovim Greeter
 
-
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  
 [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder  
@@ -41,7 +40,7 @@
 **Autocompletion**  
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
 [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - Completion source for text in current buffer  
-[hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)  - Completion source for file system paths  
+[hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - Completion source for file system paths  
 [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) - Vs Code Like Icons for autocompletion
 
 **Snippets**  
@@ -50,7 +49,8 @@
 [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) Completion source for snippet autocomplete
 
 **Comments**  
-[numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"  
+[numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"
+
 <!-- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter -->
 
 <!-- **Treesitter Syntax Highlighting, Autoclosing & Text Objects**   -->
@@ -62,9 +62,8 @@
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
----
-
 #### Managing & Installing Language Servers, Linters & Formatters
+
 [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 
 **LSP Configuration**  
@@ -73,13 +72,15 @@
 [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Smart code autocompletion with lsp
 
 **Formatting & Linting**
+
 <!-- stevearc/conform.nvim - Easy way to configure formatters -->
 <!-- mfussenegger/nvim-lint - Easy way to configure linters -->
+
 [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto install linters & formatters on startup
 
 ---
 
-#### General Notes :information_desk_person: 
+#### General Notes :information_desk_person:
 
 [Learn Vim the Smart Way](https://learnvim.irian.to/)  
 [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
@@ -92,7 +93,7 @@
 :checkhealth
 
 " Python support
-" pip install pynvim 
+" pip install pynvim
 ```
 
 **Support for copy/paste for X11**  
@@ -102,7 +103,7 @@ xsel / xclip
 Neovim has built-in LSP (Language Server Protocol) client.  
 Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
 
-**Font**  
+**Font**
 
 ```bash
 # ryanoasis/nerd-fonts
@@ -111,14 +112,16 @@ brew search font- | grep jetbrains
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
-**How to set transparent background for iTerm2 in full screen mode on a Mac**  
-1. Open your iTerm2-> Choose Full screen window style in Open profiles -> Edit profiles ->  Window -> Stylesettings.
+**How to set transparent background for iTerm2 in full screen mode on a Mac**
+
+1. Open your iTerm2-> Choose Full screen window style in Open profiles -> Edit profiles -> Window -> Stylesettings.
 2. Now un-check the Native full screen windows in General settings of iTerm2 (not the profile).
 3. Now you can choose the level transparency in Open profiles -> Edit profiles -> Window settings.
 
 ---
 
 #### Options Notes :mag_right:
+
 **Performance**
 
 ```vim
@@ -140,7 +143,7 @@ set display+=lastline
 " instead.
 
 set linebreak
-" This will cause wrap to only wrap at the characters in the breakat setting 
+" This will cause wrap to only wrap at the characters in the breakat setting
 " (`^I!@*-+;:,./?`), which defaults to space, tab, and small set of punctuation characters.
 
 set nrformats-=octal
@@ -181,7 +184,7 @@ set backup
 
 set clipboard = unnamed, unnamedplus
 " On Mac OS X and Windows, the * and + registers both point to the system clipboard.
-" On Linux, you have essentially two clipboards: one is pretty much the same as in the 
+" On Linux, you have essentially two clipboards: one is pretty much the same as in the
 " other OSes, the other is the 'selection' clipboard (mapped to register * in Vim).
 
 set nomodelines
@@ -200,18 +203,18 @@ set nomodelines
 cmd('filetype plugin indent on')    -- Включает правила отступов, зависящие от типа файла
 cmd('syntax enable')                -- Включает подстветку синтаксиса
 
-o.autoindent = true                 -- Новые строки наследуют отступ предыдущих строк  
-o.autoread = true                   -- Автоматически 'reread', если файл был измененен вне Vim  
-o.backspace = 'indent,eol,start'    -- Позволяет делать возврат через автоотступы, eol, 'старт'  
-o.compatible = false                -- Отключение совместимости с Vi  
-o.display = 'lastline'              -- Отображает последнюю строку, насколько это возможно  
-o.formatoptions:append {'j'}        -- Удаление символа комментария при соединении строк  
-o.hlsearch = true                   -- Выделяет поисковые совпадения  
-o.incsearch = true                  -- Инкрементальный поиск, показывающий частичные совпадения  
-o.laststatus=2                      -- Всегда отображать статус бар  
-o.ruler = true                      -- Показывать позицию курсора  
-o.showcmd = true                    -- Показывать незавершенные команды 'statusbar'  
-o.smarttab = true                   -- Добовляет 'tabstop' количество пробелов при нажатии клавиши 'tab'  
+o.autoindent = true                 -- Новые строки наследуют отступ предыдущих строк
+o.autoread = true                   -- Автоматически 'reread', если файл был измененен вне Vim
+o.backspace = 'indent,eol,start'    -- Позволяет делать возврат через автоотступы, eol, 'старт'
+o.compatible = false                -- Отключение совместимости с Vi
+o.display = 'lastline'              -- Отображает последнюю строку, насколько это возможно
+o.formatoptions:append {'j'}        -- Удаление символа комментария при соединении строк
+o.hlsearch = true                   -- Выделяет поисковые совпадения
+o.incsearch = true                  -- Инкрементальный поиск, показывающий частичные совпадения
+o.laststatus=2                      -- Всегда отображать статус бар
+o.ruler = true                      -- Показывать позицию курсора
+o.showcmd = true                    -- Показывать незавершенные команды 'statusbar'
+o.smarttab = true                   -- Добовляет 'tabstop' количество пробелов при нажатии клавиши 'tab'
 o.wildmenu = true                   -- Показывать меню автодоплнения 'tab'
 ```
 
@@ -261,7 +264,7 @@ vim.opt.wildignore = { '*.o', '*.a', '__pycache__' }
 vim.opt.listchars = { space = '_', tab = '>~' }
 
 --set {option}+={flags}
-vim.opt.wildignore = vim.opt.wildignore + { "*.pyc", "node_modules" }`  
+vim.opt.wildignore = vim.opt.wildignore + { "*.pyc", "node_modules" }`
 vim.opt.wildignore:append { "*.pyc", "node_modules" }`
 
 -- set {option}^={flags}
@@ -282,3 +285,12 @@ vim.opt.wildignore:remove { "node_modules" }
 - [Setup LSP](https://youtu.be/NL8D8EkphUw?si=bVEiu1z7_y0A3Flf)
 - [Setup Linting And Formating](https://youtu.be/ybUE4D80XSk?si=o02_8eVKBTav9-an)
 - [Setup Treesitter](https://youtu.be/CEMPq_r8UYQ?si=LgcXAz6xV9KsmvdT)
+
+---
+
+**_Unplugged_**  
+[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
+[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
+[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
+ [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git

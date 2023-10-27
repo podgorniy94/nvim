@@ -1,5 +1,5 @@
-return { -- UPDATE
+return { -- (-)
   "numToStr/Comment.nvim",
   event = { "BufReadPre", "BufNewFile" },
-  config = true -- require('Comment').setup()
+  config = true, -- require('Comment').setup()
 }
