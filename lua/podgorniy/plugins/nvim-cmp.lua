@@ -1,5 +1,5 @@
 -- +
-return {    -- :h completeopt
+return { -- :h completeopt
   "hrsh7th/nvim-cmp",
   event = "InsertEnter",
   dependencies = {
@@ -21,7 +21,7 @@ return {    -- :h completeopt
     require("luasnip.loaders.from_vscode").lazy_load()
 
     cmp.setup({
-      completion = {    -- configure how the completion menu works
+      completion = { -- configure how the completion menu works
         completeopt = "menu,menuone,preview,noselect",
       },
       snippet = { -- configure how nvim-cmp interacts with snippet engine
