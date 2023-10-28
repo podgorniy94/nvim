@@ -63,7 +63,15 @@
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
-### Managing & Installing Language Servers, Linters & Formatters
+**_Unplugged plugins_**  
+[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
+[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
+[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
+
+---
+
+**Managing & Installing Language Servers, Linters & Formatters**
 
 [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 
@@ -88,7 +96,6 @@
 
 ```vim
 :help config
-:echo $MYVIMRC
 :checkhealth
 
 " Python support
@@ -116,6 +123,67 @@ brew install --cask font-jetbrains-mono-nerd-font
 1. Open your iTerm2-> Choose Full screen window style in Open profiles -> Edit profiles -> Window -> Stylesettings.
 2. Now un-check the Native full screen windows in General settings of iTerm2 (not the profile).
 3. Now you can choose the level transparency in Open profiles -> Edit profiles -> Window settings.
+
+---
+
+### Lua Notes :bulb:
+
+**Conventions of lua plugins**
+
+Mostly plugins written in lua follow a certain pattern. They use a function called `.setup`, and that function expects a lua table with some options.
+
+```Lua
+require('lualine').setup({
+  options = {
+    icons_enabled = false,
+    section_separators = '',
+    component_separators = ''
+  }
+})
+```
+
+**Boolean toggle**
+
+```Lua
+-- vimL:
+-- set number
+
+vim.opt.number = true
+```
+
+**Setting an array of values**
+
+```Lua
+-- vimL:
+-- set wildignore=*.o,*.a,__pycache__
+
+vim.opt.wildignore = '*.o,*.a,__pycache__'
+vim.opt.wildignore = { '*.o', '*.a', '__pycache__' }
+```
+
+**Setting a map of values**
+
+```Lua
+-- vimL:
+-- set listchars=space:_,tab:>~
+
+vim.opt.listchars = { space = '_', tab = '>~' }
+
+--set {option}+={flags}
+vim.opt.wildignore = vim.opt.wildignore + { "*.pyc", "node_modules" }`
+vim.opt.wildignore:append { "*.pyc", "node_modules" }`
+
+-- set {option}^={flags}
+vim.opt.wildignore = vim.opt.wildignore ^ { "new_first_value" }
+vim.opt.wildignore:prepend { "new_first_value" }
+
+-- set {option}-={flags}
+vim.opt.wildignore = vim.opt.wildignore - { "node_modules" }
+vim.opt.wildignore:remove { "node_modules" }
+```
+
+> Глобальная переменная 'vim' служит точкой входа для взаимодействия с Neovim API из Lua кода.
+> Мета-аксессоры обертывают функции API: `vim.api.nvim_set_option() = vim.opt.{option}`.
 
 ---
 
@@ -191,90 +259,6 @@ set nomodelines
 " By default, the first and last five lines are read by vim for variable settings.
 ```
 
-**Defaults**
-
-Глобальная переменная 'vim' служит точкой входа для взаимодействия с Neovim API из Lua кода.
-Мета-аксессоры обертывают функции API: `vim.api.nvim_set_option() = vim.opt.{option}`.
-
-```Lua
--- :h nvim-defaults
-
-cmd('filetype plugin indent on')    -- Включает правила отступов, зависящие от типа файла
-cmd('syntax enable')                -- Включает подстветку синтаксиса
-
-o.autoindent = true                 -- Новые строки наследуют отступ предыдущих строк
-o.autoread = true                   -- Автоматически 'reread', если файл был измененен вне Vim
-o.backspace = 'indent,eol,start'    -- Позволяет делать возврат через автоотступы, eol, 'старт'
-o.compatible = false                -- Отключение совместимости с Vi
-o.display = 'lastline'              -- Отображает последнюю строку, насколько это возможно
-o.formatoptions:append {'j'}        -- Удаление символа комментария при соединении строк
-o.hlsearch = true                   -- Выделяет поисковые совпадения
-o.incsearch = true                  -- Инкрементальный поиск, показывающий частичные совпадения
-o.laststatus=2                      -- Всегда отображать статус бар
-o.ruler = true                      -- Показывать позицию курсора
-o.showcmd = true                    -- Показывать незавершенные команды 'statusbar'
-o.smarttab = true                   -- Добовляет 'tabstop' количество пробелов при нажатии клавиши 'tab'
-o.wildmenu = true                   -- Показывать меню автодоплнения 'tab'
-```
-
----
-
-### Lua Notes :bulb:
-
-**Conventions of lua plugins**
-
-Mostly plugins written in lua follow a certain pattern. They use a function called `.setup`, and that function expects a lua table with some options.
-
-```Lua
-require('lualine').setup({
-  options = {
-    icons_enabled = false,
-    section_separators = '',
-    component_separators = ''
-  }
-})
-```
-
-**Boolean toggle**
-
-```Lua
--- vimL:
--- set number
-
-vim.opt.number = true
-```
-
-**Setting an array of values**
-
-```Lua
--- vimL:
--- set wildignore=*.o,*.a,__pycache__
-
-vim.opt.wildignore = '*.o,*.a,__pycache__'
-vim.opt.wildignore = { '*.o', '*.a', '__pycache__' }
-```
-
-**Setting a map of values**
-
-```Lua
--- vimL:
--- set listchars=space:_,tab:>~
-
-vim.opt.listchars = { space = '_', tab = '>~' }
-
---set {option}+={flags}
-vim.opt.wildignore = vim.opt.wildignore + { "*.pyc", "node_modules" }`
-vim.opt.wildignore:append { "*.pyc", "node_modules" }`
-
--- set {option}^={flags}
-vim.opt.wildignore = vim.opt.wildignore ^ { "new_first_value" }
-vim.opt.wildignore:prepend { "new_first_value" }
-
--- set {option}-={flags}
-vim.opt.wildignore = vim.opt.wildignore - { "node_modules" }
-vim.opt.wildignore:remove { "node_modules" }
-```
-
 ---
 
 ### Setup Guides :grey_question:
@@ -284,11 +268,3 @@ vim.opt.wildignore:remove { "node_modules" }
 - [Setup LSP](https://youtu.be/NL8D8EkphUw?si=bVEiu1z7_y0A3Flf)
 - [Setup Linting And Formating](https://youtu.be/ybUE4D80XSk?si=o02_8eVKBTav9-an)
 - [Setup Treesitter](https://youtu.be/CEMPq_r8UYQ?si=LgcXAz6xV9KsmvdT)
-
----
-
-**_Unplugged_**  
-[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
-[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
-[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
-[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux

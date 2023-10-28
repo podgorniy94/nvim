@@ -33,7 +33,7 @@ o.cursorcolumn = false
 o.cursorline = false
 o.showbreak = "+++ " -- Отображает авто. переносы строк (Vim wrap lines)
 o.splitbelow = true -- Горизонтальные окна открываются под текущим окном
-o.wildmode = "list:longest" -- Автодоплнение 'wildmenu' как в 'bash'
+-- o.wildmode = "list:longest" -- Автодоплнение 'wildmenu' как в 'bash'
 o.number = true -- Абсолютная нумерация строк
 o.mouse = "a"
 
@@ -52,7 +52,27 @@ o.swapfile = false
 o.virtualedit = "block" -- Перемещение столбцов (rect) с использ. режима виз. блока
 o.wildignore = "*.docx,*.jpg,*.png,*..df,*.pyc,*.exe,*.flv,*.img,*.xlsx"
 
--- NETRW File Explorer
+-------------------------------------------------------------------------------
+-- Autocommands
+-- -------------------------------------------------------------------------------
+
+local autocmd = vim.api.nvim_create_autocmd
+
+-- Enable Spell Checker on certain files
+autocmd("FileType", {
+  pattern = { "html", "markdown", "text" },
+  callback = function()
+    vim.opt_local.spell = true
+  end,
+})
+
+-- Centering document vertically when entering insert mode
+
+autocmd("InsertEnter", { command = "norm zz" })
+
+-------------------------------------------------------------------------------
+-- NETRW FILE EXPLORER
+--------------------------------------------------------------------------------
 
 -- vim.g.netrw_keepdir = 0
 vim.g.netrw_banner = 0
@@ -105,3 +125,25 @@ augroup auto_commands
     autocmd filetype netrw call Netrw_mappings()
 augroup END
 ]])
+
+-- DEFAULTS
+
+--[[
+-- :h nvim-defaults
+cmd('filetype plugin indent on')    -- Включает правила отступов, зависящие от типа файла
+cmd('syntax enable')                -- Включает подстветку синтаксиса
+
+o.autoindent = true                 -- Новые строки наследуют отступ предыдущих строк
+o.autoread = true                   -- Автоматически 'reread', если файл был измененен вне Vim
+o.backspace = 'indent,eol,start'    -- Позволяет делать возврат через автоотступы, eol, 'старт'
+o.compatible = false                -- Отключение совместимости с Vi
+o.display = 'lastline'              -- Отображает последнюю строку, насколько это возможно
+o.formatoptions:append {'j'}        -- Удаление символа комментария при соединении строк
+o.hlsearch = true                   -- Выделяет поисковые совпадения
+o.incsearch = true                  -- Инкрементальный поиск, показывающий частичные совпадения
+o.laststatus=2                      -- Всегда отображать статус бар
+o.ruler = true                      -- Показывать позицию курсора
+o.showcmd = true                    -- Показывать незавершенные команды 'statusbar'
+o.smarttab = true                   -- Добовляет 'tabstop' количество пробелов при нажатии клавиши 'tab'
+o.wildmenu = true                   -- Показывать меню автодоплнения 'tab'
+]]
