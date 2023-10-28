@@ -67,7 +67,8 @@
 [rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
 [colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
 [https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
-[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
+[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides
 
 ---
 
@@ -96,6 +97,7 @@
 
 ```vim
 :help config
+:help events
 :checkhealth
 
 " Python support
