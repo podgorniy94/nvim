@@ -1,10 +1,10 @@
 ### Neovim Setup / Tables of Contents :computer:
 
-1. [Setup Guides](#setup-guides)
+1. [Setup Guides](#setup-guides-grey_question)
 2. [Plugins](#plugins-books)
-3. [Genetal Notes](#general-notes)
-4. [Options Notes](#options-notes)
-5. [Lua Notes](#lua-notes)
+3. [General Notes](#general-notes-information_desk_person)
+4. [Options Notes](#options-notes-mag_right)
+5. [Lua Notes](#lua-notes-bulb)
 
 ### Plugins :books:
 
