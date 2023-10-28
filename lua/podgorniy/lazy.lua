@@ -15,7 +15,7 @@ vim.g.mapleader = ','
 require('lazy').setup({ { import = 'podgorniy.plugins' }, { import = 'podgorniy.plugins.lsp' } }, {
   install = {
     -- try to load one of these colorschemes when starting an installation during startup
-    colorscheme = { 'OceanicNext' },
+    colorscheme = { 'tokyonight' },
   },
   checker = {
     enabled = true, -- automatically check for plugin updates

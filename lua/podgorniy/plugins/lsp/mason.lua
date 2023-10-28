@@ -37,6 +37,7 @@ return { -- +
         'emmet_ls',
         -- "prismals",
         'pyright',
+        'ruff_lsp',
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -44,6 +45,7 @@ return { -- +
 
     mason_tool_installer.setup({
       ensure_installed = {
+        'ruff', -- fuff linter (python)
         'prettier', -- prettier formatter
         'stylua', -- lua formatter
         'isort', -- python formatter
