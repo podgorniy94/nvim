@@ -1,9 +1,9 @@
 return { -- +
-  "mfussenegger/nvim-lint",
+  'mfussenegger/nvim-lint',
   lazy = true,
-  event = { "BufReadPre", "BufNewFile" },
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function()
-    local lint = require("lint")
+    local lint = require('lint')
 
     lint.linters_by_ft = {
       -- javascript = { "eslint_d" },
@@ -11,14 +11,14 @@ return { -- +
       -- javascriptreact = { "eslint_d" },
       -- typescriptreact = { "eslint_d" },
       -- svelte = { "eslint_d" },
-      python = { "pylint" },
+      python = { 'pylint' },
     }
 
     -- grouping together autocommands
     -- clear all preexisting autocommands
-    local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+    local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
 
-    vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+    vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave' }, {
       -- apply only for a certain ft
       -- pattern = {}
       group = lint_augroup,
@@ -27,8 +27,8 @@ return { -- +
       end,
     })
 
-    vim.keymap.set("n", "<leader>l", function()
+    vim.keymap.set('n', '<leader>l', function()
       lint.try_lint()
-    end, { desc = "Trigger linting for current file" })
+    end, { desc = 'Trigger linting for current file' })
   end,
 }
