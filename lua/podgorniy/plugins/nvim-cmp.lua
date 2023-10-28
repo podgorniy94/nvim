@@ -1,4 +1,3 @@
--- +
 return { -- :h completeopt
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',

@@ -1,4 +1,3 @@
--- +
 -- Plugins withot extra configurations
 return {
   {

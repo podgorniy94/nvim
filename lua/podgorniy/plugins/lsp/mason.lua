@@ -1,4 +1,4 @@
-return { -- +
+return {
   'williamboman/mason.nvim',
   dependencies = {
     'williamboman/mason-lspconfig.nvim', -- bridges mason.nvim with the lspconfig plugin

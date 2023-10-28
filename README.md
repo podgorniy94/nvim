@@ -18,7 +18,8 @@
 [tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
 [vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"  
 [vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window  
-[lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git
+[lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git  
+[windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Use treesitter to autoclose and autorename html tag
 
 **Interface**  
 [mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - Colorscheme  
