@@ -1,7 +1,7 @@
 ### Neovim Setup / Tables of Contents :computer:
 
 1. [Setup Guides](#setup-guides)
-2. [Plugins](#plugins)
+2. [Plugins](#plugins-:books:)
 3. [Genetal Notes](#general-notes)
 4. [Options Notes](#options-notes)
 5. [Lua Notes](#lua-notes)
