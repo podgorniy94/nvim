@@ -19,7 +19,7 @@
 [vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"  
 [vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window  
 [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git  
-[windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Use treesitter to autoclose and autorename html tag
+[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides
 
 **Interface**  
 [mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - Colorscheme  
@@ -43,7 +43,8 @@
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
 [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - Completion source for text in current buffer  
 [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - Completion source for file system paths  
-[onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) - Vs Code Like Icons for autocompletion
+[onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) - Vs Code Like Icons for autocompletion  
+[windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Use treesitter to autoclose and autorename html tag
 
 **Snippets**  
 [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet engine  
@@ -51,27 +52,17 @@
 [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) Completion source for snippet autocomplete
 
 **Comments**  
-[numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"
+[numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"  
+[JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter
 
-<!-- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter -->
-
-<!-- **Treesitter Syntax Highlighting, Autoclosing & Text Objects**   -->
-<!-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configuration   -->
-<!-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Treesitter configuration   -->
-<!-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autoclose brackets, parens, quotes, etc...   -->
-<!-- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose tags -->
+**Treesitter Syntax Highlighting, Autoclosing & Text Objects**  
+[nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configuration  
+[nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Treesitter configuration  
+[windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autoclose brackets, parens, quotes, etc...  
+[windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose tags
 
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-
-**_Unplugged plugins_**  
-[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
-[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
-[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
-[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
-[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides
-
----
 
 **Managing & Installing Language Servers, Linters & Formatters**
 
@@ -86,6 +77,12 @@
 [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - Easy way to configure formatters  
 [mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint) - Easy way to configure linters  
 [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto install linters & formatters on startup
+
+**_Unplugged plugins_**  
+[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
+[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
+[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
 
 ---
 
