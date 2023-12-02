@@ -82,6 +82,9 @@ vim.g.netrw_winsize = 25
 -- Change from left splitting to right splitting (netrw-v)"
 vim.g.netrw_altv = 1
 
+-- Module depreiceted requirement
+vim.g.skip_ts_context_commentstring_module = true
+
 -- MAPPING
 
 local opts = { noremap = true, silent = true }
