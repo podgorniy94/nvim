@@ -85,12 +85,6 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure tailwindcss server
-    lspconfig['tailwindcss'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
     -- configure emmet language server
     lspconfig['emmet_ls'].setup({
       capabilities = capabilities,
@@ -99,7 +93,7 @@ return {
     })
 
     -- configure python server
-    lspconfig['ruff_lsp'].setup({
+    lspconfig['pyright'].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })

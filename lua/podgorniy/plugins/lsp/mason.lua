@@ -29,11 +29,9 @@ return {
       ensure_installed = {
         'html',
         'cssls',
-        'tailwindcss',
         'lua_ls',
-        'emmet_ls',
+        'emmet_ls', -- snippets for HTML, CSS
         'pyright',
-        'ruff_lsp',
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
