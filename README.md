@@ -36,9 +36,6 @@
 **Keymap Suggestions**  
 [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-<!-- **Marking Files With Prime's Harpoon**   -->
-<!-- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) -->
-
 **Autocompletion**  
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
 [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - Completion source for text in current buffer  
@@ -83,6 +80,7 @@
 [colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
 [https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
 [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
+[ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Marking Files With Prime's Harpoon
 
 ---
 
