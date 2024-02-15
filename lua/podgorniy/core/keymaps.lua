@@ -24,6 +24,15 @@ keymap('n', '<C-l>', '<C-w>l')
 -- Better paste
 keymap('v', 'p', '"_dP')
 
+-- VISUAL
+-- Stay in indent mode
+keymap('v', '<', '<gv')
+keymap('v', '>', '>gv')
+
+-- Move text up and down
+keymap('x', 'J', ":move '>+1<CR>gv-gv")
+keymap('x', 'K', ":move '<-2<CR>gv-gv")
+
 --------------------------------------
 
 --Josean Martinez
@@ -49,19 +58,3 @@ keymap('n', '<leader>tx', '<cmd>tabclose<CR>', { desc = 'Close current tab' })
 keymap('n', '<leader>tn', '<cmd>tabn<CR>', { desc = 'Go to next tab' })
 keymap('n', '<leader>tp', '<cmd>tabp<CR>', { desc = 'Go to previous tab' })
 keymap('n', '<leader>tf', '<cmd>tabnew %<CR>', { desc = 'Open current buffer in new tab' })
-
--- VISUAL
--- Stay in indent mode
-keymap('v', '<', '<gv')
-keymap('v', '>', '>gv')
-
--- Move text up and down
-keymap('v', '<A-j>', ':m .+1<CR>==')
-keymap('v', '<A-k>', ':m .-2<CR>==')
-
--- Visual Block --
--- Move text up and down
-keymap('x', 'J', ":move '>+1<CR>gv-gv")
-keymap('x', 'K', ":move '<-2<CR>gv-gv")
-keymap('x', '<A-j>', ":move '>+1<CR>gv-gv")
-keymap('x', '<A-k>', ":move '<-2<CR>gv-gv")
