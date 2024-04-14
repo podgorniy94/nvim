@@ -62,7 +62,7 @@
 **Markdown Preview**  
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
-**Managing & Installing Language Servers, Linters & Formatters**
+**Managing & Installing Language Servers, Linters & Formatters**  
 [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 
 **LSP Configuration**  
@@ -80,8 +80,8 @@
 [norcali/colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
 [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
 [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Marking Files With Prime's Harpoon  
-[gbprod/substitute.nvim](https://github.com/gbprod/substitute.nvim) - replace things with register with "s" and "S"
-[folke/trouble.nvim](https://github.com/folke/trouble.nvim) - nice way to see diagnostics and other stuff
+[gbprod/substitute.nvim](https://github.com/gbprod/substitute.nvim) - replace things with register with "s" and "S"  
+[folke/trouble.nvim](https://github.com/folke/trouble.nvim) - nice way to see diagnostics and other stuff  
 [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) - Use lazygit within Neovim
 
 ---
@@ -90,6 +90,7 @@
 
 [Learn Vim the Smart Way](https://learnvim.irian.to/)  
 [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
+[Complete Guide](https://youtu.be/6pAG3BHurdM?si=oZEgrxNOrSmDOlxq)
 
 **Commands**
 
@@ -254,9 +255,3 @@ set nomodelines
 " Modelines allow you to set variables specific to a file.
 " By default, the first and last five lines are read by vim for variable settings.
 ```
-
----
-
-### Setup Guides :grey_question:
-
-[Complete Guide](https://youtu.be/6pAG3BHurdM?si=oZEgrxNOrSmDOlxq)
