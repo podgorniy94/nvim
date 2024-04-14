@@ -33,17 +33,17 @@ return {
         'emmet_ls', -- snippets for HTML, CSS
         'pyright',
       },
-      -- auto-install configured servers (with lspconfig)
-      automatic_installation = true, -- not the same as ensure_installed
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
-        'ruff', -- ruff linter (python)
         'prettier', -- prettier formatter
         'stylua', -- lua formatter
         'isort', -- python formatter
-        'black', -- python formatter
+        'black', -- python forma tter
+        'djlint', -- djangohtml, jinja formatter
+        'eslint', -- ts, js linter
+        'pylint', -- python linter
       },
     })
   end,

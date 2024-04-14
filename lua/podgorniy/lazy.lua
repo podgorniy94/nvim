@@ -13,10 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ','
 
 require('lazy').setup({ { import = 'podgorniy.plugins' }, { import = 'podgorniy.plugins.lsp' } }, {
-  install = {
-    -- try to load one of these colorschemes when starting an installation during startup
-    colorscheme = { 'tokyonight' },
-  },
   checker = {
     enabled = true, -- automatically check for plugin updates
     notify = false, -- get a notification when new updates are found

@@ -1,7 +1,8 @@
 return {
   'folke/which-key.nvim',
   event = 'VeryLazy',
-  init = function()
+    --  run during Neovim startup instead of actual loading
+    init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 500
   end,

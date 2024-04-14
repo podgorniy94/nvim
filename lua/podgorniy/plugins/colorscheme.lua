@@ -16,7 +16,7 @@ return {
 
       require('tokyonight').setup({
         style = 'night',
-        transparent = true,
+        -- transparent = true,
         on_colors = function(colors)
           colors.bg = bg
           colors.bg_dark = bg_dark
@@ -41,7 +41,7 @@ return {
   },
 }
 
--- oceanic-next
+-- oceanic-next transparent
 -- return { -- ++
 --   {
 --     'mhartington/oceanic-next',
@@ -55,4 +55,13 @@ return {
 --       vim.cmd([[hi EndOfBuffer guibg=NONE ctermbg=NONE]])
 --     end,
 --   },
+-- }
+--
+---- oceanic-next default
+-- return { -- ++
+--   'mhartington/oceanic-next',
+--   priority = 1000, -- make sure to load this before all the other start plugins
+--   config = function()
+--     vim.cmd([[colorscheme OceanicNext]])
+--   end,
 -- }

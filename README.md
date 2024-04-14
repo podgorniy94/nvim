@@ -9,17 +9,18 @@
 ### Plugins :books:
 
 **Plugin Manager**  
-[folke/lazy.nvim](https://github.com/folke/lazy.nvim) - Amazing plugin manager
+[folke/lazy.nvim](https://github.com/folke/lazy.nvim) - plugin manager
 
 **Dependency For Other Plugins**  
 [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Useful lua functions other plugins use
 
 **Essentials**  
-[tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
-[vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"  
+[kylechui/nvim-surround](https://github.com/kylechui/nvim-surround) - manipulate surroundings with "ys", "ds", and "cs"  
+[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
 [vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window  
 [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git  
-[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides
+[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides  
+[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager
 
 **Interface**  
 [mhartington/oceanic-next](https://github.com/mhartington/oceanic-next) - Colorscheme  
@@ -50,11 +51,11 @@
 
 **Comments**  
 [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"  
-[JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter
+[JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) - Requires treesitter  
+[folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim) - highlight/search for comments like todo/hack/bug
 
 **Treesitter Syntax Highlighting, Autoclosing & Text Objects**  
 [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configuration  
-[nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Treesitter configuration  
 [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autoclose brackets, parens, quotes, etc...  
 [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose tags
 
@@ -62,7 +63,6 @@
 [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 
 **Managing & Installing Language Servers, Linters & Formatters**
-
 [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 
 **LSP Configuration**  
@@ -76,11 +76,13 @@
 [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto install linters & formatters on startup
 
 **_Unplugged plugins_**  
-[rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager  
-[colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
-[https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
-[christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux
-[ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Marking Files With Prime's Harpoon
+[nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Treesitter configuration  
+[norcali/colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Highlighter  
+[nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
+[ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Marking Files With Prime's Harpoon  
+[gbprod/substitute.nvim](https://github.com/gbprod/substitute.nvim) - replace things with register with "s" and "S"
+[folke/trouble.nvim](https://github.com/folke/trouble.nvim) - nice way to see diagnostics and other stuff
+[kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) - Use lazygit within Neovim
 
 ---
 
@@ -100,9 +102,6 @@
 " pip install pynvim
 ```
 
-**Support for copy/paste for X11**  
-xsel / xclip
-
 **LSP**  
 Neovim has built-in LSP (Language Server Protocol) client.  
 Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
@@ -112,8 +111,13 @@ Manual, triggered completion is provided by Nvim's builtin `omnifunc`.
 ```bash
 # ryanoasis/nerd-fonts
 brew tap homebrew/cask-fonts
+
+# jetbrains
 brew search font- | grep jetbrains
 brew install --cask font-jetbrains-mono-nerd-font
+
+# meslo
+brew install font-meslo-lg-nerd-font
 ```
 
 **How to set transparent background for iTerm2 in full screen mode on a Mac**
@@ -124,28 +128,15 @@ brew install --cask font-jetbrains-mono-nerd-font
 
 **Extra information**
 
-File for configuring formatting for Lua -> `.stylua.toml`  
-LSP -> `pyright`  
-Linting -> `ruff` (~~pylint, mypy~~)  
-Formatting -> `isort`, `black`
+File for configuring formatting for Lua: `.stylua.toml`  
+**Python:**
+- LSP: `pyright`  
+- Linting: `ruff` (~~pylint, mypy~~)
+- Formatting: `isort`, `black`
 
 ---
 
 ### Lua Notes :bulb:
-
-**Conventions of lua plugins**
-
-Mostly plugins written in lua follow a certain pattern. They use a function called `.setup`, and that function expects a lua table with some options.
-
-```Lua
-require('lualine').setup({
-  options = {
-    icons_enabled = false,
-    section_separators = '',
-    component_separators = ''
-  }
-})
-```
 
 **Boolean toggle**
 
@@ -268,8 +259,4 @@ set nomodelines
 
 ### Setup Guides :grey_question:
 
-- [Complete Guide](https://youtu.be/vdn_pKJUda8?si=A6tykSv-ll-bYXAs)
-- [How To Use lazy.nvim](https://youtu.be/6mxWayq-s9I?si=iaHEX00Wv0OG4_M8)
-- [Setup LSP](https://youtu.be/NL8D8EkphUw?si=bVEiu1z7_y0A3Flf)
-- [Setup Linting And Formating](https://youtu.be/ybUE4D80XSk?si=o02_8eVKBTav9-an)
-- [Setup Treesitter](https://youtu.be/CEMPq_r8UYQ?si=LgcXAz6xV9KsmvdT)
+[Complete Guide](https://youtu.be/6pAG3BHurdM?si=oZEgrxNOrSmDOlxq)

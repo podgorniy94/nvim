@@ -3,7 +3,6 @@ local keymap = vim.keymap.set
 -- local opts = { noremap = true, silent = true }
 
 -- Remap comma as leader key
--- Keymap is transfered to lua/podgorniy/lazy.lua
 -- vim.g.mapleader = ","
 
 -- Modes
@@ -42,7 +41,6 @@ keymap('i', 'jk', '<ESC>', { desc = 'Exit insert mode with jk' })
 
 -- Clear Search Highlights
 keymap('n', '<leader>h', ':nohl<CR>', { desc = 'Clear search highlights' })
-
 -- Increment/Decrement Numbers
 keymap('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
 keymap('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })

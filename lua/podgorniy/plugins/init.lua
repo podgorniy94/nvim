@@ -1,28 +1,16 @@
--- Plugins withot extra configurations
-return {
+return { -- Plugins withot extra configurations
   {
-    -- Dependency For Other Plugins
-    'nvim-lua/plenary.nvim',
-    -- Essentials
-    'tpope/vim-surround',
-    'vim-scripts/ReplaceWithRegister',
+    'nvim-lua/plenary.nvim', -- Dependency For Other Plugins
+    'christoomey/vim-tmux-navigator',
   },
-  -- Maximizes and restore current window
   {
-    'szw/vim-maximizer',
+    'szw/vim-maximizer', -- Maximizes and restore current window
     keys = {
       { '<leader>sm', '<cmd>MaximizerToggle<CR>', desc = 'Maximize/minimize a split' },
     },
   },
-  -- Improvement UI select/input
   {
-    'stevearc/dressing.nvim',
+    'stevearc/dressing.nvim', -- Improvement UI select/input
     event = 'VeryLazy',
-  },
-  -- Show line modifications on left hand side
-  {
-    'lewis6991/gitsigns.nvim',
-    event = { 'BufReadPre', 'BufNewFile' },
-    config = true,
   },
 }
