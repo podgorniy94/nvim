@@ -19,7 +19,6 @@
 [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigating Between Neovim Windows and Tmux  
 [vim-maximizer](https://github.com/szw/vim-maximizer) - Maximizes and restore current window  
 [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side for Git  
-[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides  
 [rmagatti/auto-session](https://github.com/rmagatti/auto-session) - Session Manager
 
 **Interface**  
@@ -27,7 +26,9 @@
 [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - Status Line  
 [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - VS Code Like Icons  
 [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line  
-[goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Neovim Greeter
+[goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Neovim Greeter  
+[lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides  
+[echasnovski/mini.indetscope](https://github.com/echasnovski/mini.indentscope) - active indent guide and indent text objects
 
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  

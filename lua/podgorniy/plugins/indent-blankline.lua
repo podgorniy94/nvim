@@ -4,7 +4,11 @@ return {
     main = 'ibl',
     config = function()
       require('ibl').setup({
-        indent = { char = '╎' }, -- ┊ ╎
+        indent = {
+          char = '│',
+          tab_char = '│',
+        },
+        scope = { enabled = false },
         exclude = {
           filetypes = {
             'lua',
