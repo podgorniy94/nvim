@@ -25,15 +25,15 @@ return {
       lint.try_lint()
     end, { desc = 'Trigger linting for current file' })
 
-    -- local venv_path =
-    --   'import sys; sys.path.append("/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages"); import pylint_venv; pylint_venv.inithook(force_venv_activation=True, quiet=True)'
-    --
-    -- local pylint = lint.linters.pylint
-    -- pylint.args = {
-    --   '-f',
-    --   'json',
-    --   '--init-hook',
-    --   venv_path,
-    -- }
+    local venv_path =
+      'import sys; sys.path.append("/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages"); import pylint_venv; pylint_venv.inithook(force_venv_activation=True, quiet=True)'
+
+    local pylint = lint.linters.pylint
+    pylint.args = {
+      '-f',
+      'json',
+      '--init-hook',
+      venv_path,
+    }
   end,
 }
