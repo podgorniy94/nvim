@@ -42,7 +42,7 @@ return {
         'isort', -- python formatter
         'black', -- python forma tter
         'djlint', -- djangohtml, jinja formatter
-        'eslint', -- ts, js linter
+        'standardjs', -- ts, js linter
         'pylint', -- python linter
       },
     })
