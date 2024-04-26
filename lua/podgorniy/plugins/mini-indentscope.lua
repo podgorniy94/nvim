@@ -13,6 +13,7 @@ return {
       desc = 'Disable indentscope for certain filetypes',
       callback = function()
         local ignore_filetypes = {
+          'alpha',
           'aerial',
           'dashboard',
           'help',
