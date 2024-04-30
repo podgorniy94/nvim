@@ -17,6 +17,13 @@ o.smartindent = true -- Доп. к опции ai автоматически вы
 o.softtabstop = 4 -- Количество пробелов, которыми символ табуляции отобр. при добавлении
 o.tabstop = 4 -- Количество пробелов, которыми символ табуляции отображается в тексте
 
+-- Установка отступов для различных типов файлов
+local function set_filetype_options(filetype, options)
+  vim.cmd(string.format("autocmd FileType %s setlocal %s", filetype, options))
+end
+set_filetype_options("html", "shiftwidth=2 tabstop=2 expandtab")
+set_filetype_options("htmldjango", "shiftwidth=2 tabstop=2 expandtab")
+
 -- SEARCH OPTIONS
 
 o.ignorecase = true -- Игнорирует регистр при поиске
