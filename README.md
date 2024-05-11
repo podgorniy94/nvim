@@ -133,7 +133,7 @@ brew install font-meslo-lg-nerd-font
 File for configuring formatting for Lua: `.stylua.toml`  
 **Python:**
 - LSP: `pyright`  
-- Linting: `ruff` (~~pylint, mypy~~)
+- Linting: `pylint`  
 - Formatting: `isort`, `black`
 
 ---
