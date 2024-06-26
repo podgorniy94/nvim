@@ -23,6 +23,7 @@ local function set_filetype_options(filetype, options)
 end
 set_filetype_options("html", "shiftwidth=2 tabstop=2 expandtab")
 set_filetype_options("htmldjango", "shiftwidth=2 tabstop=2 expandtab")
+set_filetype_options("javascript", "shiftwidth=2 tabstop=2 expandtab")
 
 -- SEARCH OPTIONS
 
