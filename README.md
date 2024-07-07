@@ -128,6 +128,8 @@ brew install font-meslo-lg-nerd-font
 2. Now un-check the Native full screen windows in General settings of iTerm2 (not the profile).
 3. Now you can choose the level transparency in Open profiles -> Edit profiles -> Window settings.
 
+Replaced by **WezTerm**
+
 **Extra information**
 
 File for configuring formatting for Lua: `.stylua.toml`  
