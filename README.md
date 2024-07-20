@@ -71,6 +71,9 @@
 [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Easy way to configure lsp servers  
 [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Smart code autocompletion with lsp
 
+**Trouble.nvim**  
+[folke/trouble.nvim](https://github.com/folke/trouble.nvim) - nice way to see diagnostics and other stuff
+
 **Formatting & Linting**  
 [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - Easy way to configure formatters  
 [mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint) - Easy way to configure linters  
@@ -82,7 +85,6 @@
 [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) - File Explorer  
 [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Marking Files With Prime's Harpoon  
 [gbprod/substitute.nvim](https://github.com/gbprod/substitute.nvim) - replace things with register with "s" and "S"  
-[folke/trouble.nvim](https://github.com/folke/trouble.nvim) - nice way to see diagnostics and other stuff  
 [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) - Use lazygit within Neovim
 
 ---
