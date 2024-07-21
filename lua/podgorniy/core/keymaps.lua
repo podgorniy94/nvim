@@ -32,6 +32,9 @@ keymap('v', '>', '>gv')
 keymap('x', 'J', ":move '>+1<CR>gv-gv")
 keymap('x', 'K', ":move '<-2<CR>gv-gv")
 
+-- Dismiss Noice Message
+keymap("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", {desc = "Dismiss Noice Message"})
+
 --------------------------------------
 
 --Josean Martinez
