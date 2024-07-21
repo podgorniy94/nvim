@@ -79,41 +79,8 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
     end
 
-    -- Jinja LSP
-    vim.filetype.add({
-      extension = {
-        jinja = 'jinja',
-        jinja2 = 'jinja',
-        j2 = 'jinja',
-      },
-    })
-
     -- if you want to debug
     vim.lsp.set_log_level('debug')
-
-    local nvim_lsp = require('lspconfig')
-    local configs = require('lspconfig.configs')
-
-    if not configs.jinja_lsp then
-      configs.jinja_lsp = {
-        default_config = {
-          name = 'jinja-lsp',
-          cmd = { 'jinja-lsp' },
-          filetypes = { 'html', 'htmldjango', 'jinja', 'rust' },
-          root_dir = function(fname)
-            return '.'
-            --return nvim_lsp.util.find_git_ancestor(fname)
-          end,
-          init_options = {
-            templates = './elekon_monitoring/templates',
-            backend = { './elekon_monitoring' },
-            lang = 'python',
-          },
-        },
-      }
-    end
-
-    nvim_lsp.jinja_lsp.setup({})
 
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers

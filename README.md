@@ -28,7 +28,8 @@
 [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - Buffer Line  
 [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Neovim Greeter  
 [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides  
-[echasnovski/mini.indetscope](https://github.com/echasnovski/mini.indentscope) - active indent guide and indent text objects
+[echasnovski/mini.indetscope](https://github.com/echasnovski/mini.indentscope) - active indent guide and indent text objects--
+[folke/noice.nvim](https://github.com/folke/noice.nvim) - replaces the UI for messages, cmdline and the popupmenu
 
 **Fuzzy Finder**  
 [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Dependency for better performance  
@@ -42,6 +43,8 @@
 [fhrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion plugin  
 [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - Completion source for text in current buffer  
 [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - Completion source for file system paths  
+[hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline) - Completion source for vim's cmdline
+
 [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) - Vs Code Like Icons for autocompletion  
 [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Use treesitter to autoclose and autorename html tag
 

@@ -13,7 +13,8 @@ return {
         json = { 'prettier' },
         markdown = { 'prettier' },
         lua = { 'stylua' },
-        python = { 'isort', 'black' }, -- Executed in the order listed in the table
+        python = { 'ruff' },
+        -- python = { 'isort', 'black' }, -- Executed in the order listed in the table
         htmldjango = { 'djlint' },
       },
     })
