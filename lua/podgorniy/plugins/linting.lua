@@ -6,7 +6,7 @@ return {
 
     lint.linters_by_ft = {
       javascript = { 'standardjs' },
-      python = { 'mypy' },
+      python = { 'pylint', 'mypy' },
       htmldjango = { 'djlint' },
     }
 
