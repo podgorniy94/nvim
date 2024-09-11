@@ -5,8 +5,8 @@ return {
     local lint = require('lint')
 
     lint.linters_by_ft = {
-      javascript = { 'standardjs' },
-      python = { 'pylint', 'mypy' },
+      javascript = { 'quick-lint-js' },
+      python = { 'ruff', 'mypy' },
       htmldjango = { 'djlint' },
     }
 

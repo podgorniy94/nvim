@@ -41,9 +41,9 @@ return {
         'stylua', -- lua formatter
         'ruff', -- python formatter
         'djlint', -- djangohtml, jinja formatter
-        'pylint', -- python linter
-        'standardjs', -- js linter
+        'quick-lint-js', -- js linter
         'mypy', -- python linter (static type checker)
+        -- 'pylint', -- python linter
         -- 'isort', -- python import formatter
         -- 'black', -- python formatter
       },
