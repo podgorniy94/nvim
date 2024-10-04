@@ -8,6 +8,7 @@ return {
     conform.setup({
       formatters_by_ft = {
         javascript = { 'prettier' },
+        svelte = { "prettier" },
         css = { 'prettier' },
         html = { 'prettier' },
         json = { 'prettier' },

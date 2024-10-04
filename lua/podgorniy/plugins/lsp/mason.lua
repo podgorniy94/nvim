@@ -30,13 +30,15 @@ return {
         'html',
         'cssls',
         'lua_ls',
-        'emmet_ls', -- snippets for HTML, CSS
+        'emmet_ls', -- snippets for HTML, CSS, Svelte
         'pyright',
+        "svelte",
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
+
         'prettier', -- prettier formatter
         'stylua', -- lua formatter
         'ruff', -- python formatter
