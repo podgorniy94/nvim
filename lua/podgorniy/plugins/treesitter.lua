@@ -1,7 +1,6 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   event = { 'BufReadPre', 'BufNewFile' },
-  -- Updating language parsers after updating or installing TS
   build = ':TSUpdate',
   dependencies = {
     'windwp/nvim-ts-autotag',
@@ -32,6 +31,7 @@ return {
         'css',
         'markdown',
         'markdown_inline',
+        'svelte',
         'bash',
         'lua',
         'vim',
@@ -40,8 +40,6 @@ return {
         'query',
         'vimdoc',
         'c',
-        'python',
-        'htmldjango',
       },
       incremental_selection = {
         enable = true,
