@@ -8,6 +8,7 @@ return {
       javascript = { 'quick-lint-js' },
       python = { 'ruff', 'mypy' },
       htmldjango = { 'djlint' },
+      -- svelte = { 'eslint_d' }
     }
 
     -- grouping together autocommands

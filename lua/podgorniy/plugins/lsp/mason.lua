@@ -41,10 +41,11 @@ return {
 
         'prettier', -- prettier formatter
         'stylua', -- lua formatter
-        'ruff', -- python formatter
+        'ruff', -- python formatter, linting
         'djlint', -- djangohtml, jinja formatter
         'quick-lint-js', -- js linter
         'mypy', -- python linter (static type checker)
+        -- 'eslint_d', -- for svelte linting
         -- 'pylint', -- python linter
         -- 'isort', -- python import formatter
         -- 'black', -- python formatter
