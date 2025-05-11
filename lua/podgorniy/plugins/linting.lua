@@ -6,7 +6,7 @@ return {
 
     lint.linters_by_ft = {
       javascript = { 'quick-lint-js' },
-      python = { 'ruff', 'mypy' },
+      python = { 'ruff' }, -- mypy off
       htmldjango = { 'djlint' },
       -- svelte = { 'eslint_d' }
     }

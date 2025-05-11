@@ -32,19 +32,18 @@ return {
         'lua_ls',
         'emmet_ls', -- snippets for HTML, CSS, Svelte
         'pyright',
-        "svelte",
+        'svelte',
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
-
         'prettier', -- prettier formatter
         'stylua', -- lua formatter
         'ruff', -- python formatter, linting
         'djlint', -- djangohtml, jinja formatter
         'quick-lint-js', -- js linter
-        'mypy', -- python linter (static type checker)
+        -- 'mypy', -- python linter (static type checker)
         -- 'eslint_d', -- for svelte linting
         -- 'pylint', -- python linter
         -- 'isort', -- python import formatter
