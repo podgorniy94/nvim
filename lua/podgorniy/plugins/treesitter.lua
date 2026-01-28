@@ -41,6 +41,7 @@ return {
         'vimdoc',
         'c',
         'python',
+        'jinja',
       },
       incremental_selection = {
         enable = true,

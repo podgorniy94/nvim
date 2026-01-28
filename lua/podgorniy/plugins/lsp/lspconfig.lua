@@ -85,7 +85,6 @@ return {
     -- if you want to debug
     vim.lsp.set_log_level('debug')
 
-    -- Mason-lspconfig ≥ 2.x: новый способ указать handlers
     mason_lspconfig.setup({
       handlers = {
         -- default handler for installed servers
@@ -113,6 +112,19 @@ return {
                 },
                 completion = {
                   callSnippet = 'Replace',
+                },
+              },
+            },
+          })
+        end,
+        ['ruff'] = function()
+          lspconfig.ruff.setup({
+            capabilities = capabilities,
+            init_options = {
+              settings = {
+                logLevel = "error",
+                lint = {
+                  enable = true,
                 },
               },
             },

@@ -6,9 +6,11 @@ return {
 
     lint.linters_by_ft = {
       javascript = { 'quick-lint-js' },
-      python = { 'ruff' }, -- mypy off
       htmldjango = { 'djlint' },
       -- svelte = { 'eslint_d' }
+
+      -- python linting is handled by ruff LSP (via nvim-lspconfig)
+      -- python = { 'ruff' },
     }
 
     -- grouping together autocommands

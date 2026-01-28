@@ -15,7 +15,6 @@ return {
         markdown = { 'prettier' },
         lua = { 'stylua' },
         python = { 'ruff' },
-        -- python = { 'isort', 'black' }, -- Executed in the order listed in the table
         htmldjango = { 'djlint' },
       },
     })
@@ -29,10 +28,3 @@ return {
     end, { desc = 'Format file or range (in visual mode)' })
   end,
 }
--- conform.setup({
--- format_on_save = {
---   lsp_fallback = true, -- Try to format via LSP if the formatter isn't available
---   async = false,
---   timeout_ms = 1000, -- Timeout for synch formatting
--- },
--- })
